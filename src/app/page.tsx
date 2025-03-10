@@ -10,7 +10,7 @@ const Page = () => {
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
-              <p className='h-8 w-auto text-white'>degree</p>
+              <p className='h-8 w-auto text-white'>Degree</p>
             </a>
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
@@ -40,21 +40,21 @@ const Page = () => {
         </div>
       </section>
       {/* Seção de Serviços */}
-      <section id="services" className="py-20">
+      <section id="services" className="py-20 justify-items-center">
         <div className="container mx-auto text-gray-800">
-          <h3 className="text-3xl font-serif font-bold text-left">O QUE FAZEMOS?</h3>
+          <h3 className="mb-4 text-3xl font-serif font-bold text-left">O QUE FAZEMOS?</h3>
           <p className='font-serif text-left'>A Degree Arquitetura se destaca na área de arquitetura de interiores, oferecendo soluções criativas e personalizadas que refletem a identidade dos clientes. Com uma equipe especializada, a empresa projeta ambientes funcionais e estéticos, desde residências até espaços comerciais, sempre priorizando a harmonia e a sustentabilidade. Além disso, a Degree Arquitetura realiza:</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10 text-center">
-            <div className="bg-white p-6 rounded shadow ">
-              <h4 className="font-semibold">Análise de Espaços</h4>
+            <div className="bg-white p-6 rounded shadow">
+              <h4 className="font-serif font-semibold mb-4">Análise de Espaços</h4>
               <p>Avaliamos cada ambiente para entender suas características e potencialidades, garantindo que cada projeto maximize o uso do espaço disponível.</p>
             </div>
             <div className="bg-white p-6 rounded shadow">
-              <h4 className="font-semibold">Desenvolvimento de Conceitos</h4>
+              <h4 className="font-serif  font-semibold mb-4">Desenvolvimento de Conceitos</h4>
               <p>Criamos conceitos de design que capturam a essência do cliente, utilizando elementos que vão desde a escolha de móveis até a paleta de cores.</p>
             </div>
             <div className="bg-white p-6 rounded shadow">
-              <h4 className="font-semibold">Execução de Projetos</h4>
+              <h4 className="font-serif font-semibold mb-4">Execução de Projetos</h4>
               <p>Acompanhamos a execução dos projetos de perto, assegurando que cada detalhe seja fiel ao planejamento inicial e que a qualidade seja mantida em todas as etapas.</p>
             </div>
           </div>
@@ -64,19 +64,19 @@ const Page = () => {
       {/* Seção de Portfólio */}
       <section id="portfolio" className="py-20 bg-gray-100">
         <div className="container mx-auto text-center text-black">
-          <h3 className="text-3xl font-bold">Nosso Portfólio</h3>
+          <h3 className="text-3xl font-bold font-serif">Nosso Portfólio</h3>
           <p className="mt-4">Confira alguns dos nossos projetos mais recentes.</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
             <div className="bg-white p-4 rounded shadow">
-              <img src="/images/project1.jpg" alt="Projeto 1" className="w-full h-48 object-cover rounded" />
+              <img src="/images/foto1.jpg" alt="Projeto 1" className="w-full h-48 object-cover rounded" />
               <h4 className="font-semibold mt-2">Projeto 1</h4>
             </div>
             <div className="bg-white p-4 rounded shadow">
-              <img src="/images/project2.jpg" alt="Projeto 2" className="w-full h-48 object-cover rounded" />
+              <img src="/images/foto2.jpg" alt="Projeto 2" className="w-full h-48 object-cover rounded" />
               <h4 className="font-semibold mt-2">Projeto 2</h4>
             </div>
             <div className="bg-white p-4 rounded shadow">
-              <img src="/images/project3.jpg" alt="Projeto 3" className="w-full h-48 object-cover rounded" />
+              <img src="/images/foto3.jpg" alt="Projeto 3" className="w-full h-48 object-cover rounded" />
               <h4 className="font-semibold mt-2">Projeto 3</h4>
             </div>
           </div>
