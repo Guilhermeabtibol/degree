@@ -13,19 +13,11 @@ const Page = () => {
               <p className='h-8 w-auto text-white'>degree</p>
             </a>
           </div>
-          <div className="flex lg:hidden">
-            <button type="button" className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
-              <span className="sr-only">Open main menu</span>
-              <svg className="size-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-              </svg>
-            </button>
-          </div>
           <div className="hidden lg:flex lg:gap-x-12">
-            <a href="#" className="text-sm font-semibold text-white">Product</a>
-            <a href="#" className="text-sm font-semibold text-white">Features</a>
-            <a href="#" className="text-sm font-semibold text-white">Marketplace</a>
-            <a href="#" className="text-sm font-semibold text-white">Company</a>
+            <a href="#" className="text-sm font-semibold text-gray-500  hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600">Product</a>
+            <a href="#" className="text-sm font-semibold text-gray-500  hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600">Features</a>
+            <a href="#" className="text-sm font-semibold text-gray-500  hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600">Marketplace</a>
+            <a href="#" className="text-sm font-semibold text-gray-500  hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600">Company</a>
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <a href="#" className="text-sm font-semibold text-white"><span aria-hidden="true">&rarr;</span></a>
@@ -49,20 +41,21 @@ const Page = () => {
       </section>
       {/* Seção de Serviços */}
       <section id="services" className="py-20">
-        <div className="container mx-auto text-center text-black">
-          <h3 className="text-3xl font-bold">Nossos Serviços</h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
-            <div className="bg-white p-6 rounded shadow">
-              <h4 className="font-semibold">Desenvolvimento Web</h4>
-              <p>Construímos sites responsivos e funcionais.</p>
+        <div className="container mx-auto text-gray-800">
+          <h3 className="text-3xl font-serif font-bold text-left">O QUE FAZEMOS?</h3>
+          <p className='font-serif text-left'>A Degree Arquitetura se destaca na área de arquitetura de interiores, oferecendo soluções criativas e personalizadas que refletem a identidade dos clientes. Com uma equipe especializada, a empresa projeta ambientes funcionais e estéticos, desde residências até espaços comerciais, sempre priorizando a harmonia e a sustentabilidade. Além disso, a Degree Arquitetura realiza:</p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10 text-center">
+            <div className="bg-white p-6 rounded shadow ">
+              <h4 className="font-semibold">Análise de Espaços</h4>
+              <p>Avaliamos cada ambiente para entender suas características e potencialidades, garantindo que cada projeto maximize o uso do espaço disponível.</p>
             </div>
             <div className="bg-white p-6 rounded shadow">
-              <h4 className="font-semibold">Design Gráfico</h4>
-              <p>Criação de identidades visuais impactantes.</p>
+              <h4 className="font-semibold">Desenvolvimento de Conceitos</h4>
+              <p>Criamos conceitos de design que capturam a essência do cliente, utilizando elementos que vão desde a escolha de móveis até a paleta de cores.</p>
             </div>
             <div className="bg-white p-6 rounded shadow">
-              <h4 className="font-semibold">Consultoria Digital</h4>
-              <p>Orientação para otimizar sua presença online.</p>
+              <h4 className="font-semibold">Execução de Projetos</h4>
+              <p>Acompanhamos a execução dos projetos de perto, assegurando que cada detalhe seja fiel ao planejamento inicial e que a qualidade seja mantida em todas as etapas.</p>
             </div>
           </div>
         </div>
