@@ -23,14 +23,11 @@ const Page = () => {
                 <p className='font-serif font-bold h-8 w-auto text-white hover:text-gray-500'>Degree</p>
               </a>
             </div>
-            <div className="hidden lg:flex lg:gap-x-12">
+            <div className="hidden lg:flex text-center mr-150 lg:gap-x-12">
               <a href="#services" className="text-sm font-semibold text-white hover:text-gray-500">Sobre</a>
               <a href="#portfolio" className="text-sm font-semibold text-white hover:text-gray-500">Projetos</a>
               <a href="#localizacao" className="text-sm font-semibold text-white hover:text-gray-500">Localização</a>
               <a href="#contato" className="text-sm font-semibold text-white hover:text-gray-500">Contato</a>
-            </div>
-            <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-              <a href="#" className="text-sm font-semibold text-white"><span aria-hidden="true">&rarr;</span></a>
             </div>
 
             {/* Botão do Menu para Mobile */}
