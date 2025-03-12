@@ -1,6 +1,6 @@
+
 "use client";
 import React, { useState } from 'react';
-
 
 const Page = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,10 +10,10 @@ const Page = () => {
   };
 
   return (
-    <div className="bg-gray-500">
+    <div>
       {/* Cabeçalho */}
-      <header className="absolute inset-x-0 top-0 z-50 mx-4">
-        <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+      <header className="absolute inset-x-0 top-0 z-50">
+        <nav className="flex items-center justify-between p-6 lg:px-8 mx-auto" aria-label="Global">
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
@@ -21,10 +21,10 @@ const Page = () => {
             </a>
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
-            <a href="#" className="text-sm font-semibold text-white  hover:text-gray-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600">Product</a>
-            <a href="#" className="text-sm font-semibold text-white  hover:text-gray-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600">Features</a>
-            <a href="#" className="text-sm font-semibold text-white  hover:text-gray-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600">Marketplace</a>
-            <a href="#" className="text-sm font-semibold text-white  hover:text-gray-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600">Company</a>
+            <a href="#services" className="text-sm font-semibold text-white hover:text-gray-500">Sobre</a>
+            <a href="#" className="text-sm font-semibold text-white hover:text-gray-500">Features</a>
+            <a href="#" className="text-sm font-semibold text-white hover:text-gray-500">Localização</a>
+            <a href="#" className="text-sm font-semibold text-white hover:text-gray-500">Contato</a>
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <a href="#" className="text-sm font-semibold text-white"><span aria-hidden="true">&rarr;</span></a>
@@ -53,9 +53,9 @@ const Page = () => {
         </div>
       )}
 
-            {/* Seção Hero */}
-      <section className="relative h-screen bg-cover bg-center " style={{ backgroundImage: 'url(/images/foto12.jpg)' }}>
-        <div className="flex items-center justify-start h-full bg-opacity-50 p-10"> {/* Alinhamento à esquerda com margem */}
+      {/* Seção Hero */}
+      <section className="relative h-screen bg-cover bg-center mx-4" style={{ backgroundImage: 'url(/images/foto12.jpg)' }}>
+        <div className="flex items-center justify-start h-full bg-opacity-50 p-10">
           <div className="text-left text-white">
             <h1 className="text-5xl font-serif font-semibold tracking-tight sm:text-7xl">BUSCAMOS ENTENDER O</h1>
             <h1 className="text-5xl font-serif font-semibold tracking-tight sm:text-7xl">GOSTO DO CLIENTE</h1>
@@ -68,17 +68,15 @@ const Page = () => {
         </div>
       </section>
 
-
-
       {/* Seção de Serviços */}
-      <section id="services" className="py-20 justify-items-center mx-4 bg-gray-100">
+      <section id="services" className="py-20 justify-items-center bg-white">
         <div className="container mx-auto text-gray-800">
-          <h3 className="mb-4 text-3xl font-serif font-bold text-left">O QUE FAZEMOS?</h3>
-          <p className='font-serif text-left'>
-          Na Degree, trabalhamos com um <strong>estilo contemporâneo e atemporal</strong>, sempre buscando entender as preferências e o gosto de cada cliente. Nossa abordagem é personalizada, incorporando um toque de decoração afetiva que transforma espaços em verdadeiros lares. Acreditamos que cada ambiente deve ser uma extensão da personalidade de seus moradores, refletindo suas histórias e vivências.
-          Cada projeto que desenvolvemos é único, com características distintas que o diferenciam dos demais. Valorizamos a individualidade e a autenticidade, criando ambientes que não apenas atendem às necessidades funcionais, mas que também proporcionam conforto e bem-estar. Para nós, um lar é mais do que um espaço físico; é um lugar onde memórias são construídas e sentimentos são vividos.
+          <h3 className="mb-4 text-3xl font-serif font-bold text-left mx-4">O QUE FAZEMOS?</h3>
+          <p className='text-left text-content-justify text-2xl mx-4'>
+            Na Degree, trabalhamos com um <strong>estilo contemporâneo e atemporal</strong>, sempre buscando entender as preferências e o gosto de cada cliente. Nossa abordagem é personalizada, incorporando um toque de decoração afetiva que transforma espaços em verdadeiros lares. Acreditamos que cada ambiente deve ser uma extensão da personalidade de seus moradores, refletindo suas histórias e vivências.
+            Cada projeto que desenvolvemos é único, com características distintas que o diferenciam dos demais. Valorizamos a individualidade e a autenticidade, criando ambientes que não apenas atendem às necessidades funcionais, mas que também proporcionam conforto e bem-estar. Para nós, um lar é mais do que um espaço físico; é um lugar onde memórias são construídas e sentimentos são vividos.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mt-10 text-center">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mt-10 text-center text-2xl mx-4">
             <div className="bg-white p-6 rounded-lg shadow">
               <h4 className="font-serif font-semibold mb-4">Análise de Espaços</h4>
               <p>Avaliamos cada ambiente para entender suas características e potencialidades, garantindo que cada projeto maximize o uso do espaço disponível.</p>
@@ -99,9 +97,9 @@ const Page = () => {
         </div>
       </section>
 
-
+      
       {/* Seção de Transformação de Apartamento */}
-      <section className="py-20 bg-gray-100 mx-4">
+      <section className="py-20 bg-white ">
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-4">
           {/* Imagem à esquerda */}
           <div className="md:w-1/2 mb-8 md:mb-0">
@@ -110,7 +108,7 @@ const Page = () => {
           
           {/* Texto à direita */}
           <div className="md:w-1/2 md:pl-8 text-center ">
-            <p className="text-2xl font serif text-gray-700 mb-10">
+            <p className="text-2xl font-serif text-gray-700 mb-10">
               Transforme seu apartamento em um espaço único e especial com a ajuda dos nossos arquitetos e designers experientes. Solicite um orçamento hoje mesmo e garanta um resultado perfeito!
             </p>
             <a href="#" className="inline-block bg-gray-500 text-white px-6 py-3 rounded-md shadow hover:bg-gray-400 font-semibold">
@@ -121,7 +119,7 @@ const Page = () => {
       </section>
 
       {/* Seção de Portfólio */}
-      <section id="portfolio" className="py-20 bg-white mx-4">
+      <section id="portfolio" className="py-20 bg-white mx-auto">
         <div className="container mx-auto text-center text-black">
           <h3 className="text-3xl font-bold font-serif">Nosso Portfólio</h3>
           <p className="mt-4">Confira alguns dos nossos projetos mais recentes.</p>
@@ -142,19 +140,35 @@ const Page = () => {
         </div>
       </section>
 
-      {/* Seção de Contato */}
-      <section id="contact" className="py-20 mx-4 bg-gray-100">
-        <div className="container mx-auto text-center text-black">
-          <h3 className="text-3xl font-bold">Entre em Contato</h3>
-          <p className="mt-4">Estamos prontos para ajudar você a realizar seu projeto.</p>
-          <form className="mt-6">
-            <input type="text" placeholder="Seu Nome" className="border p-2 rounded w-1/2 mx-auto" required />
-            <input type="email" placeholder="Seu Email" className="border p-2 rounded w-1/2 mx-auto mt-4" required />
-            <textarea placeholder="Sua Mensagem" className="border p-2 rounded w-1/2 mx-auto mt-4" rows={4} required></textarea>
-            <button type="submit" className="mt-4 bg-green-500 text-white px-4 py-5 rounded">Enviar</button>
-          </form>
+      {/* Seção de Localização */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto flex flex-col md:flex-row items-start justify-between px-4">
+          {/* Endereço à esquerda */}
+          <div className="md:w-1/2 mb-8 md:mb-0">
+            <h3 className="text-3xl font-serif font-bold mb-4">Nossa Localização</h3>
+            <p className="text-lg text-gray-700">
+              Rua Exemplo, 123<br />
+              Bairro Exemplo<br />
+ Cidade, Estado, 12345-678<br />
+              Telefone: (11) 1234-5678
+            </p>
+          </div>
+          
+          {/* Mapa à direita */}
+          <div className="md:w-1/2">
+            <iframe
+              title="Localização no Google Maps"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.123456789012!2d-47.123456789012!3d-23.123456789012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1234567890abcdef!2sNome%20da%20Empresa!5e0!3m2!1spt-BR!2sbr!4v1234567890123"
+              width="100%"
+              height="450"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
         </div>
       </section>
+
 
       {/* Rodapé */}
       <footer className="py-10 bg-gray-800 text-white text-center">
