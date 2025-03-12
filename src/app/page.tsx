@@ -1,5 +1,6 @@
 
 "use client";
+import "./styles/globals.css"
 import React, { useState } from 'react';
 
 const Page = () => {
@@ -22,7 +23,7 @@ const Page = () => {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             <a href="#services" className="text-sm font-semibold text-white hover:text-gray-500">Sobre</a>
-            <a href="#" className="text-sm font-semibold text-white hover:text-gray-500">Features</a>
+            <a href="#" className="text-sm font-semibold text-white hover:text-gray-500">Projetos</a>
             <a href="#" className="text-sm font-semibold text-white hover:text-gray-500">Localização</a>
             <a href="#" className="text-sm font-semibold text-white hover:text-gray-500">Contato</a>
           </div>
@@ -69,7 +70,7 @@ const Page = () => {
       </section>
 
       {/* Seção de Serviços */}
-      <section id="services" className="py-20 justify-items-center bg-white">
+      <section id="services" className="py-20 justify-items-center bg-gray-100">
         <div className="container mx-auto text-gray-800">
           <h3 className="mb-4 text-3xl font-serif font-bold text-left mx-4">O QUE FAZEMOS?</h3>
           <p className='text-left text-content-justify text-2xl mx-4'>
@@ -99,8 +100,8 @@ const Page = () => {
 
       
       {/* Seção de Transformação de Apartamento */}
-      <section className="py-20 bg-white ">
-        <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-4">
+      <section className="py-20 bg-white">
+        <div className="container bg-gray-100 mx-auto flex flex-col md:flex-row items-center justify-between px-4">
           {/* Imagem à esquerda */}
           <div className="md:w-1/2 mb-8 md:mb-0">
             <img src="/images/foto10.jpg" alt="Transformação de Apartamento" className="w-auto h-auto rounded-lg shadow-lg" />
@@ -121,8 +122,8 @@ const Page = () => {
       {/* Seção de Portfólio */}
       <section id="portfolio" className="py-20 bg-white mx-auto">
         <div className="container mx-auto text-center text-black">
-          <h3 className="text-3xl font-bold font-serif">Nosso Portfólio</h3>
-          <p className="mt-4">Confira alguns dos nossos projetos mais recentes.</p>
+          <h3 className="text-3xl font-bold font-serif text-center">Projetos Realizados </h3>
+          <p className="mt-4 text-center">Confira alguns dos nossos projetos mais recentes.</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
             <div className="bg-white p-4 rounded shadow">
               <img src="/images/foto1.jpg" alt="Projeto 1" className="w-full h-48 object-cover rounded" />
@@ -141,12 +142,12 @@ const Page = () => {
       </section>
 
       {/* Seção de Localização */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto flex flex-col md:flex-row items-start justify-between px-4">
+      <section id="localizacao" className="py-20 bg-gray-100 ">
+        <div className="container bg-white mx-auto flex flex-col md:flex-row items-start justify-between px-4">
           {/* Endereço à esquerda */}
           <div className="md:w-1/2 mb-8 md:mb-0">
-            <h3 className="text-3xl font-serif font-bold mb-4">Nossa Localização</h3>
-            <p className="text-lg text-gray-700">
+            <h3 className="text-3xl font-serif font-bold mb-4 mt-35 text-center">Nossa Localização</h3>
+            <p className="text-lg text-gray-700 text-center">
               Rua Exemplo, 123<br />
               Bairro Exemplo<br />
  Cidade, Estado, 12345-678<br />
