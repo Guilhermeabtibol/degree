@@ -55,7 +55,7 @@ const Page = () => {
       )}
 
       {/* Seção Hero */}
-      <section className="relative h-screen bg-cover bg-center mx-4" style={{ backgroundImage: 'url(/images/foto12.jpg)' }}>
+      <section className="relative h-screen bg-cover bg-center mx-auto" style={{ backgroundImage: 'url(/images/foto12.jpg)' }}>
         <div className="flex items-center justify-start h-full bg-opacity-50 p-10">
           <div className="text-left text-white">
             <h1 className="text-5xl font-serif font-semibold tracking-tight sm:text-7xl">BUSCAMOS ENTENDER O</h1>
@@ -72,13 +72,13 @@ const Page = () => {
       {/* Seção de Serviços */}
       <section id="services" className="py-20 justify-items-center bg-gray-100">
         <div className="container mx-auto text-gray-800">
-          <h3 className="mb-4 text-3xl font-serif font-bold text-left mx-4">O QUE FAZEMOS?</h3>
-          <p className='text-left text-content-justify text-2xl mx-4'>
+          <h3 className="mb-4  ml-10 text-3xl font-serif font-bold text-left mx-auto">O QUE FAZEMOS?</h3>
+          <p className='text-left ml-10 text-content-justify text-2xl mx-auto'>
           Na Degree, trabalhamos com um <strong>estilo contemporâneo e atemporal</strong>, buscando entender as preferências de cada cliente. Nossa abordagem personalizada transforma espaços em lares que refletem a personalidade de seus moradores. Cada projeto é único, valorizando a individualidade e criando ambientes que atendem às necessidades funcionais, proporcionando conforto e bem-estar. Para nós, um lar é mais do que um espaço físico; é onde memórias são construídas.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mt-10 text-center text-2xl mx-4">
-            <div className="bg-white p-6 rounded-lg shadow">
-              <h4 className="font-serif font-semibold mb-4">Análise de Espaços</h4>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mt-10 text-center text-2xl mx-auto">
+            <div className="bg-white p-6 rounded-lg shadow mx-auto">
+              <h4 className="font-serif font-semibold mb-4 mx-auto">Análise de Espaços</h4>
               <p>Avaliamos cada ambiente para entender suas características e potencialidades, garantindo que cada projeto maximize o uso do espaço disponível.</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
@@ -111,7 +111,7 @@ const Page = () => {
             <p className="text-2xl font-serif text-gray-700 mb-10">
               Transforme seu apartamento em um espaço único e especial com a ajuda dos nossos arquitetos e designers experientes. Solicite um orçamento hoje mesmo e garanta um resultado perfeito!
             </p>
-            <a href="#" className="inline-block bg-gray-500 text-white px-6 py-3 rounded-md shadow hover:bg-gray-400 font-semibold">
+            <a href="#" className="mb-4 inline-block bg-gray-500 text-white px-6 py-3 rounded-md shadow hover:bg-gray-400 font-semibold">
               Solicite um orçamento
             </a>
           </div>
@@ -129,7 +129,7 @@ const Page = () => {
               <h4 className="font-semibold mt-2">Projeto 1</h4>
             </div>
             <div className="bg-white p-4 rounded shadow mx-auto">
-              <img src="/images/foto2.jpg" alt="Projeto 2" className="w-full h-48 object-cover rounded" />
+              <img src="/images/foto5.jpg" alt="Projeto 2" className="w-full h-48 object-cover rounded" />
               <h4 className="font-semibold mt-2">Projeto 2</h4>
             </div>
             <div className="bg-white p-4 rounded shadow mx-auto">
@@ -142,7 +142,7 @@ const Page = () => {
 
       {/* Seção de Localização */}
       <section id="localizacao" className="py-20 bg-gray-100">
-        <div className="container bg-white mx-4 flex flex-col md:flex-row items-start justify-between px-4">
+        <div className="container bg-white mx-auto flex flex-col md:flex-row items-start justify-between px-4">
           {/* Endereço à esquerda */}
           <div className="md:w-1/2 mb-8 md:mb-0 mx-auto">
             <h3 className="text-3xl font-serif font-bold mb-4 mt-35 text-center text-black">Nossa Localização</h3>
