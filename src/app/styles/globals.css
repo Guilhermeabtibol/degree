@@ -48,6 +48,13 @@ nav a {
 nav a:hover {
   color: gray; /* Cor do texto ao passar o mouse */
 }
+
+/* Efeito de Blur no Conteúdo Principal */
+.blur {
+  filter: blur(5px);
+  transition: filter 0.3s ease;
+}
+
 /* Seção Hero */
 .hero {
   position: relative;
