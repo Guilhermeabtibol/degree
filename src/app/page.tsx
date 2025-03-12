@@ -11,7 +11,7 @@ const Page = () => {
   };
 
   return (
-    <div>
+    <div className="mx-auto">
       {/* Cabeçalho */}
       <header className="absolute inset-x-0 top-0 z-50">
         <nav className="flex items-center justify-between p-6 lg:px-8 mx-auto" aria-label="Global">
@@ -74,8 +74,7 @@ const Page = () => {
         <div className="container mx-auto text-gray-800">
           <h3 className="mb-4 text-3xl font-serif font-bold text-left mx-4">O QUE FAZEMOS?</h3>
           <p className='text-left text-content-justify text-2xl mx-4'>
-            Na Degree, trabalhamos com um <strong>estilo contemporâneo e atemporal</strong>, sempre buscando entender as preferências e o gosto de cada cliente. Nossa abordagem é personalizada, incorporando um toque de decoração afetiva que transforma espaços em verdadeiros lares. Acreditamos que cada ambiente deve ser uma extensão da personalidade de seus moradores, refletindo suas histórias e vivências.
-            Cada projeto que desenvolvemos é único, com características distintas que o diferenciam dos demais. Valorizamos a individualidade e a autenticidade, criando ambientes que não apenas atendem às necessidades funcionais, mas que também proporcionam conforto e bem-estar. Para nós, um lar é mais do que um espaço físico; é um lugar onde memórias são construídas e sentimentos são vividos.
+          Na Degree, trabalhamos com um <strong>estilo contemporâneo e atemporal</strong>, buscando entender as preferências de cada cliente. Nossa abordagem personalizada transforma espaços em lares que refletem a personalidade de seus moradores. Cada projeto é único, valorizando a individualidade e criando ambientes que atendem às necessidades funcionais, proporcionando conforto e bem-estar. Para nós, um lar é mais do que um espaço físico; é onde memórias são construídas.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mt-10 text-center text-2xl mx-4">
             <div className="bg-white p-6 rounded-lg shadow">
@@ -124,16 +123,16 @@ const Page = () => {
         <div className="container mx-auto text-center text-black">
           <h3 className="text-3xl font-bold font-serif text-center">Projetos Realizados </h3>
           <p className="mt-4 text-center">Confira alguns dos nossos projetos mais recentes.</p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
-            <div className="bg-white p-4 rounded shadow">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10" >
+            <div className="bg-white p-4 rounded shadow mx-auto">
               <img src="/images/foto1.jpg" alt="Projeto 1" className="w-full h-48 object-cover rounded" />
               <h4 className="font-semibold mt-2">Projeto 1</h4>
             </div>
-            <div className="bg-white p-4 rounded shadow">
+            <div className="bg-white p-4 rounded shadow mx-auto">
               <img src="/images/foto2.jpg" alt="Projeto 2" className="w-full h-48 object-cover rounded" />
               <h4 className="font-semibold mt-2">Projeto 2</h4>
             </div>
-            <div className="bg-white p-4 rounded shadow">
+            <div className="bg-white p-4 rounded shadow mx-auto">
               <img src="/images/foto3.jpg" alt="Projeto 3" className="w-full h-48 object-cover rounded" />
               <h4 className="font-semibold mt-2">Projeto 3</h4>
             </div>
@@ -142,11 +141,11 @@ const Page = () => {
       </section>
 
       {/* Seção de Localização */}
-      <section id="localizacao" className="py-20 bg-gray-100 ">
-        <div className="container bg-white mx-auto flex flex-col md:flex-row items-start justify-between px-4">
+      <section id="localizacao" className="py-20 bg-gray-100">
+        <div className="container bg-white mx-4 flex flex-col md:flex-row items-start justify-between px-4">
           {/* Endereço à esquerda */}
-          <div className="md:w-1/2 mb-8 md:mb-0">
-            <h3 className="text-3xl font-serif font-bold mb-4 mt-35 text-center">Nossa Localização</h3>
+          <div className="md:w-1/2 mb-8 md:mb-0 mx-auto">
+            <h3 className="text-3xl font-serif font-bold mb-4 mt-35 text-center text-black">Nossa Localização</h3>
             <p className="text-lg text-gray-700 text-center">
               Rua Exemplo, 123<br />
               Bairro Exemplo<br />
@@ -156,7 +155,7 @@ const Page = () => {
           </div>
           
           {/* Mapa à direita */}
-          <div className="md:w-1/2">
+          <div className="md:w-1/2 mb-4 mx-auto">
             <iframe
               title="Localização no Google Maps"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.123456789012!2d-47.123456789012!3d-23.123456789012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1234567890abcdef!2sNome%20da%20Empresa!5e0!3m2!1spt-BR!2sbr!4v1234567890123"
