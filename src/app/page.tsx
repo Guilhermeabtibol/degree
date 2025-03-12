@@ -1,6 +1,5 @@
-
 "use client";
-import "./styles/globals.css"
+import "./styles/globals.css";
 import React, { useState } from 'react';
 
 const Page = () => {
@@ -9,6 +8,9 @@ const Page = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  const phoneNumber = '92984757646'; // Substitua pelo seu número de celular
+  const whatsappLink = `https://wa.me/${phoneNumber}`;
 
   return (
     <div>
@@ -35,7 +37,7 @@ const Page = () => {
           <div className="lg:hidden">
             <button onClick={toggleMenu} className="text-gray-500 hover:text-gray-900 focus:outline-none">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
               </svg>
             </button>
           </div>
@@ -58,10 +60,10 @@ const Page = () => {
       <section className="relative h-screen bg-cover bg-center mx-auto" style={{ backgroundImage: 'url(/images/foto12.jpg)' }}>
         <div className="flex items-center justify-start h-full bg-opacity-50 p-10">
           <div className="text-left text-white">
-            <h1 className="text-5xl font-serif font-semibold tracking-tight sm:text-7xl">BUSCAMOS ENTENDER O</h1>
-            <h1 className="text-5xl font-serif font-semibold tracking-tight sm:text-7xl">GOSTO DO CLIENTE</h1>
+            <h1 className="text-5xl ml-16 font-serif font-semibold tracking-tight sm:text-7xl">BUSCAMOS ENTENDER O</h1>
+            <h1 className="text-5xl ml-16 font-serif font-semibold tracking-tight sm:text-7xl">GOSTO DO CLIENTE</h1>
             <div className="mt-10 flex items-center gap-x-6">
-              <a href="#portfolio" className="rounded-md bg-gray-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-gray-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600">
+              <a href="#portfolio" className="rounded-md ml-16 bg-gray-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-gray-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600">
                 Ver Projetos
               </a>
             </div>
@@ -70,11 +72,11 @@ const Page = () => {
       </section>
 
       {/* Seção de Serviços */}
-      <section id="services" className="py-20 justify-items-center bg-gray-100">
+      <section id="services" className=" py-20 justify-items-center bg-gray-100">
         <div className="container mx-auto text-gray-800">
-          <h3 className="mb-4  ml-10 text-3xl font-serif font-bold text-left mx-auto">O QUE FAZEMOS?</h3>
-          <p className='text-left ml-10 text-content-justify text-2xl mx-auto'>
-          Na Degree, trabalhamos com um <strong>estilo contemporâneo e atemporal</strong>, buscando entender as preferências de cada cliente. Nossa abordagem personalizada transforma espaços em lares que refletem a personalidade de seus moradores. Cada projeto é único, valorizando a individualidade e criando ambientes que atendem às necessidades funcionais, proporcionando conforto e bem-estar. Para nós, um lar é mais do que um espaço físico; é onde memórias são construídas.
+          <h3 className="mb-4 ml-1 text-3xl font-serif font-bold text-left mx-auto">O QUE FAZEMOS?</h3>
+          <p className='text-left ml-1 text-content-justify text-2xl mx-auto'>
+            Na Degree, trabalhamos com um <strong>estilo contemporâneo e atemporal</strong>, buscando entender as preferências de cada cliente. Nossa abordagem personalizada transforma espaços em lares que refletem a personalidade de seus moradores. Cada projeto é único, valorizando a individualidade e criando ambientes que atendem às necessidades funcionais, proporcionando conforto e bem-estar. Para nós, um lar é mais do que um espaço físico; é onde memórias são construídas.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mt-10 text-center text-2xl mx-auto">
             <div className="bg-white p-6 rounded-lg shadow mx-auto">
@@ -97,7 +99,6 @@ const Page = () => {
         </div>
       </section>
 
-      
       {/* Seção de Transformação de Apartamento */}
       <section className="py-20 bg-white">
         <div className="container bg-gray-100 mx-auto flex flex-col md:flex-row items-center justify-between px-4">
@@ -123,13 +124,13 @@ const Page = () => {
         <div className="container mx-auto text-center text-black">
           <h3 className="text-3xl font-bold font-serif text-center">Projetos Realizados </h3>
           <p className="mt-4 text-center">Confira alguns dos nossos projetos mais recentes.</p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10" >
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
             <div className="bg-white p-4 rounded shadow mx-auto">
               <img src="/images/foto1.jpg" alt="Projeto 1" className="w-full h-48 object-cover rounded" />
               <h4 className="font-semibold mt-2">Projeto 1</h4>
             </div>
             <div className="bg-white p-4 rounded shadow mx-auto">
-              <img src="/images/foto5.jpg" alt="Projeto 2" className="w-full h-48 object-cover rounded" />
+              <img src="/images/foto5.jpg" alt="Projeto 2" className="w-full h-48 object-cover rounded " />
               <h4 className="font-semibold mt-2">Projeto 2</h4>
             </div>
             <div className="bg-white p-4 rounded shadow mx-auto">
@@ -149,7 +150,7 @@ const Page = () => {
             <p className="text-lg text-gray-700 text-center">
               Rua Exemplo, 123<br />
               Bairro Exemplo<br />
- Cidade, Estado, 12345-678<br />
+              Cidade, Estado, 12345-678<br />
               Telefone: (11) 1234-5678
             </p>
           </div>
@@ -169,6 +170,35 @@ const Page = () => {
         </div>
       </section>
 
+      {/* Botão do WhatsApp */}
+      <a
+        href={whatsappLink}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-4 right-4 bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition duration-300"
+        aria-label="Chat with us on WhatsApp"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-6 h-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M3 3h18v18H3V3z"
+          />
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M3 3h18v18H3V3z"
+          />
+        </svg>
+      </a>
 
       {/* Rodapé */}
       <footer className="py-10 bg-gray-800 text-white text-center">
